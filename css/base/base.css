@@ -1,0 +1,39 @@
+body,
+body * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 60px;
+}
+
+header > nav {
+    display: flex;
+    gap: 10px;    
+}
+
+header > nav > a {
+    text-decoration: none;
+    color: black;
+}
+
+.section-1 {
+    margin-top: 30px;
+}
+
+.section-2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
