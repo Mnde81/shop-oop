@@ -3,6 +3,8 @@ export class PageShopList {
         this.DOM = DOM;
         this.localStorageKey = 'itemList';
 
+        console.log(this.readLocalStorage());
+
         this.render();
         this.listEvents();
     }
@@ -52,10 +54,11 @@ export class PageShopList {
     }
 
     minus(rowDOM, buttonDOM) {
+        console.log(this);
+
         const amountChange = +buttonDOM.dataset.step;
         const idToDecrease = rowDOM.id;
         const amountDOM = rowDOM.querySelector('span');
-
         const list = this.readLocalStorage()
             .map(item => item.id === idToDecrease
                 ? {
@@ -94,9 +97,9 @@ export class PageShopList {
     listEvents() {
         const rowsDOM = this.DOM.querySelectorAll('tbody > tr');
         const funcList = {
-            minus: this.minus.bind(this),
-            plus: this.plus.bind(this),
-            delete: this.delete.bind(this),
+            minus: this.minus,
+            plus: this.plus,
+            delete: this.delete,
         };
 
         for (const rowDOM of rowsDOM) {
