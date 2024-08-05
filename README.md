@@ -31,11 +31,11 @@ Design: --
     -   [x] main content
     -   [x] footer
 -   [x] navigation between pages
--   [ ] product CRUD:
-    -   [ ] list
-    -   [ ] add
-    -   [ ] remove
-    -   [ ] update
+-   [x] product CRUD:
+    -   [x] list
+    -   [x] add
+    -   [x] remove
+    -   [x] update
 
 ## 🧰 Getting Started
 
